@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./resource/images/title.png"
+      type="image/x-icon"
+    />
+    <title>Leaderboard</title>
+  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+  <body>
+    <header class="leader-header">
+      <h1>Leaderboard</h1>
+    </header>
+    <main class="main">
+      <section class="leader-section leader-view">
+        <ul class="leader-view-order order-title">
+          <li class="leader-view-title">
+            <h3>Recent Score</h3>
+            <button class="leader-refresh">Refresh &#10227;</button>
+          </li>
+        </ul>
+        <ul class="leader-view-order" id="list-leader-board">
+          <li class="leader-view-list">
+            <span>Osman Wako</span> <span>89.9</span>
+          </li>
+          <li class="leader-view-list">
+            <span>Osman Wako</span> <span>89.9</span>
+          </li>
+          <li class="leader-view-list">
+            <span>Osman Wako</span> <span>89.9</span>
+          </li>
+          <li class="leader-view-list">
+            <span>Osman Wako</span> <span>89.9</span>
+          </li>
+        </ul>
+      </section>
+      <section class="leader-section leader-add">
+        <ul class="leader-view-order order-title">
+            <li class="leader-view-title">
+                <h3 class="leader-refresh">Add Your Score</h3>
+            </li>
+          </ul>
+        <form class="leader-add-form">
+            <input type="" class="leader-form-input" placeholder="Your name">
+            <input type="" class="leader-form-input" placeholder="Your Score">
+            <p class="leader-form-input leader-form-submit">
+                <button class="submit-button">Submit</button>
+            </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

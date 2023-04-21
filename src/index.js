@@ -1,8 +1,11 @@
 import './assets/title.png';
 import './assets/style.css';
-import leaderboards from './js/database.js';
+import { createvent, getleaders } from './js/database.js';
+import creategameid from './js/game.js';
 
 const start = () => {
-  leaderboards();
+  creategameid();
+  getleaders();
+  createvent();
 };
 start();

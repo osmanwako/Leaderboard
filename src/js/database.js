@@ -49,15 +49,19 @@ const item = () => {
 
 const leaderboards = (lists) => {
   element.innerHTML = '';
-  lists.forEach((list) => {
+  lists.forEach((list, i) => {
     if (typeof list.score === 'string' && typeof list.user === 'string') {
+      const listno = span();
+      listno.className = 'listn-no';
+      listno.textContent = `${i + 1}`;
       const userspan = span();
       userspan.textContent = list.user;
+      const usercontain = span();
+      usercontain.append(listno, userspan);
       const scorespan = span();
       scorespan.textContent = list.score;
-
       const li = item();
-      li.append(userspan, scorespan);
+      li.append(usercontain, scorespan);
       element.append(li);
     }
   });
